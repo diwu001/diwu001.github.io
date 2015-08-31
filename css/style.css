@@ -1,0 +1,508 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body { 
+	font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+a {
+	text-decoration:none;
+	margin:0em auto;
+}
+
+a:link,a:visited,a:active {
+	color:#FFFFFF;
+}
+
+.fixed-width {
+	width:100%;
+	margin: 0 auto;
+}
+
+/* Start of Header */
+.header-container {
+	background-color:#F8CDCD;
+	overflow:hidden;
+	text-align:center;
+	width:100%;
+}
+
+#top-list {
+	padding: 1em 0em 0em 1em;
+	list-style:none;
+	font-size:1.25em;
+	position:fixed;
+	z-index:100;
+	/*opacity:0.9;*/
+}
+
+/*#top-list:hover{
+	opacity:0.9;
+}*/
+
+#top-list .menuItem:hover{
+	font-size:1.27em;
+}
+
+.iconItem img:hover{
+    width: 47px;
+    height: 47px;
+}
+
+#top-list li {
+	padding: 0.33em 0em 0.33em 0em;
+	border:none;
+}
+
+nav img{
+	border:0;
+}
+
+#header-content{
+	text-align:center;
+	width:100%;
+	margin-top:6em;
+	margin-bottom:13em;
+}
+#header-content-1{
+	margin:4em 0em 0em 0em;
+	width:100%;
+}
+
+#header-content-1 img {
+	max-width:20%;
+}
+
+#header-content-2{
+	margin:4em 0em 0em 0em;
+	color:#FFFFFF;
+	font-size:2.5em;
+	font-weight: 100;
+	text-align: center;
+	font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+	width:100%;
+}
+
+@media screen and (max-width: 768px){
+	#header-content-2{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	#header-content-2{
+		font-size: 20px;
+	}	
+}
+/*  End of Header  */
+
+/*  Start of Rotating words  */
+.rw-wrapper{
+	width: 80%;
+	position: relative;
+	margin: 10px auto 0 auto;
+}
+
+.rw-sentence{
+	margin-right: 90px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.rw-sentence span{
+	color:#FFFFFF;
+}
+
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+
+.rw-words-1 span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: #F8A234;
+	-webkit-animation: rotateWord 9s linear infinite 0s;
+	-ms-animation: rotateWord 9s linear infinite 0s;
+	animation: rotateWord 9s linear infinite 0s;
+}
+
+.rw-words-1 span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+	-ms-animation-delay: 3s; 
+	animation-delay: 3s; 
+	color: #449D44;
+}
+
+.rw-words-1 span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+	-ms-animation-delay: 6s; 
+	animation-delay: 6s; 
+	color: #6b739d;	
+}
+
+@-webkit-keyframes rotateWord {
+	0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    27% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@media screen and (max-width: 768px){
+	.rw-sentence { 
+		font-size: 30px; 
+	}
+}
+
+@media screen and (max-width: 320px){
+	.rw-sentence { 
+		font-size: 20px; 
+	}
+}
+
+.rw-sentence-IE{
+	display:none;
+}
+
+.no-cssanimations .rw-wrapper .rw-sentence span:first-child{
+	opacity: 1;
+}
+/*  End of Rotating words  */
+
+/*  Start of About  */
+.about-container {
+	background-color: #B7CEED;
+	padding: 0em;
+	margin:0em;
+	overflow:hidden;
+}
+
+#about-title {
+	margin: 0 auto;
+	padding: 1em 0em 1em 0.5em;
+	text-align: center;
+	font-size: 4.5em;
+	color: #FFFFFF;
+	width:90%;
+}
+
+#line1 {
+	text-align:center;
+	font-size: 2em;
+	margin: 1.2em 0em 1.5em 0em;
+	color: #000000;
+}
+
+#line2 {
+	text-align: center;
+	font-size: 1.6em;
+	margin: 0.6em 0em 0.6em 0em;
+	color: #FFFFFF;
+}
+
+#line3 {
+	text-align: center;
+	font-size: 1.6em;
+	margin: 0.6em 0em 0.6em 0em;
+	color: #FFFFFF;
+}
+
+#line4 {
+	text-align: center;
+	font-size: 1.6em;
+	margin: 0.6em 0em 0.6em 0em;
+	color: #FFFFFF;
+}
+
+#line5 {
+	text-align: center;
+	font-size: 1.6em;
+	margin: 0.6em 0em 1.4em 0em;
+	color: #FFFFFF;
+}
+
+#wrap {  
+	width:78.1%; 
+	margin:0 auto;
+	overflow:hidden; 
+	padding: 0.33em 0em 3em 0em;
+}
+    
+.sub-title {
+	font-size:30px; 
+	color:#000000;
+}
+
+#left, #center, #right {      
+	margin-bottom:-625em; 
+	padding-bottom:625em; 
+	font-size: 1.25em;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+#left {
+	float:left; 
+	width:33%;          
+}
+
+#center { 
+	float:left; 
+	width:33%;  
+	border-style:none dashed none dashed;   
+	border-color:#FFFFFF;
+	border-width: 0.0625em;    
+}
+
+#right { 
+	float:right; 
+	width:33%;          
+}
+
+.clearfix {
+	clear:both;
+}
+
+#wrap {
+	margin-bottom:7em;
+}
+
+@media screen and (max-width: 550px){
+	#left{
+		float:none;
+		width:100%;
+	}
+	#center{
+		float:none;
+		width:100%;
+		border:none;   
+	}
+	#right{
+		float:none;
+		width:100%;
+	}
+	#wrap{
+		margin-bottom:0.6em;
+	}
+	#about-title {
+		font-size:30px;
+	}
+}
+/*  End of About  */	
+
+/*  Start of Experiments  */
+.experiments-container{
+	background-color: #AEE973;
+}
+
+#experiments-title {
+	margin: 0 auto;
+	padding: 1.5em 0em 0em 1em;
+	text-align: center;
+	font-size: 4.375em;
+	color: #FFFFFF;
+}
+
+#experiments-content{
+	font-size: 2em;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top:3em;
+	padding-bottom:9em;
+}	
+
+.experiments-box {
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+	border-radius:5px;
+}
+
+.experiments-box:hover .experiments-overlay {
+    transition: all 0.3s ease-in-out 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.experiments-overlay {
+    background : rgba(0,0,0,.75);
+    border : 4px solid #449D44;
+	border-radius:5px;
+    visibility: hidden;
+    position: absolute;
+    text-align:center;
+    padding-top:40px;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.experiments-gallery li {
+    margin:25px;
+}
+
+.experiments-gallery {         
+    margin:0 0 0 0;
+    margin-top:2em;
+	margin-left: 5em;
+}
+.experiments-gallery { 
+	text-align:center;
+}
+.experiments-gallery li {     
+    list-style:none;
+    margin-bottom:25px; 
+    padding-right:220px;       
+}
+.experiments-gallery li img {
+    cursor: pointer;
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    .experiments-gallery {
+        margin-left: 50px;
+    }
+}
+
+@media (min-width:768px) and (max-width:990px) {
+    .experiments-gallery {
+	    margin-left: 100px; 
+    }
+}
+
+@media (min-width:550px) and (max-width: 767px) {	
+    .experiments-gallery {
+	    margin-left: 180px; 
+    }
+}
+
+@media (min-width: 379px) and (max-width: 549px) {	
+	.experiments-box, .experiments-overlay， {
+        height:180px;
+        width:180px;
+    }
+	
+	.experiments-gallery {
+		margin-left: 80px; 
+    }
+	#experiments-title {
+		font-size:30px;
+	}
+}
+
+@media (max-width: 380px) {	
+	.experiments-box , .experiments-overlay， {
+       height:150px;
+       width:150px;
+    }
+	.experiments-gallery {
+       margin-left: 50px; 
+    }
+	#experiments-title {
+		font-size:30px;
+	}
+}
+/*  End of Experiments  */
+
+/*  Start of MoreAboutMe  */	
+.more-container{
+	background-color: #DFDFDF;
+}
+
+#more-title {
+	margin: 0 auto;
+	padding: 1.5em 0em 0em 1em;
+	text-align: center;
+	font-size: 4.375em;
+	color: #FFFFFF;
+}
+
+#more-content{
+	font-size: 2em;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top:3em;
+	padding-bottom:6em;
+}
+
+@media screen and (max-width: 550px){
+	#more-content span {
+		display:block;
+	}
+	#more-title {
+		font-size:30px;
+	}
+}
+/*  End of MoreAboutMe  */
+
+/*  Start of ContactMe  */
+footer {
+	background-color: #F8CB4A;
+	overflow:hidden;
+	z-index:1;
+}
+
+#contact-title {
+	margin: 0 auto;
+	padding: 2.5em 0em 0em 1em;
+	text-align: center;
+	font-size: 4.375em;
+	color: #FFFFFF;
+}
+
+#contact-content {
+	margin-bottom:25em;
+}
+
+.contact-line {
+	text-align: center;
+	font-size: 2em;
+	position:relative;
+	top: 3em;
+	margin: 1.25em 0em 1.25em 0em;
+	color: #FFFFFF;
+}
+
+@media screen and (max-width: 550px){
+	#contact-title {
+		font-size:30px;
+	}
+	.contact-line {
+		font-size:1.5em;
+	}
+}
+/*  End of ContactMe  */

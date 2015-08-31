@@ -1,0 +1,15 @@
+.rw-wrapper { 
+	display: none; 
+} 
+
+.rw-sentence-IE { 
+	display: block; 
+}
+
+.experiments-overlay { 
+	display: none; 
+} 
+
+.experiments-gallery {
+        margin-left: 500px;
+}
