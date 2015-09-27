@@ -335,8 +335,8 @@ nav img{
 	font-size: 2em;
 	color: #FFFFFF;
 	text-align: center;
-	padding-top:3em;
-	padding-bottom:9em;
+	padding-top: 3em;
+	padding-bottom: 5em;
 }	
 
 .experiments-box {
@@ -435,6 +435,12 @@ nav img{
 	#experiments-title {
 		font-size:30px;
 	}
+}
+
+.ProjectGitLink {
+    font-size: 16px;
+    width: 250px;
+    margin-top: 10px;
 }
 /*  End of Experiments  */
 
